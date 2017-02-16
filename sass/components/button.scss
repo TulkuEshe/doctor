@@ -1,0 +1,47 @@
+.button {
+  background-color: #ffa44c;
+  width: 104px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.button:active {
+  background-color: #e5a364;
+  border: none;
+}
+.button__more {
+  margin-top: 10px;
+  margin-left: 38px;
+}
+.button__like {
+  margin-right: 11px;
+  width: 70px;
+  border-radius: 5px;
+  text-align: left;
+  height: 22px;
+  z-index: 0;
+  background-image: url(../img/like.png);
+  background-repeat: no-repeat;
+  background-position: 88% 47%;
+}
+.button__submit {
+  width: 140px;
+  height: 56px;
+  font-size: 24px;
+  font-weight: 400;
+}
+@media (max-width: 640px) {
+  .button__more {
+    display: none;
+  }
+  .button__like {
+    font-size: 36.29px;
+    font-weight: 100;
+    width: 140px;
+    height: 44px;
+    background-size: 10%;
+  }
+}
