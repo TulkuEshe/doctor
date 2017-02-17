@@ -83,6 +83,7 @@
     align-items: center;
     font-size: 28px;
     font-weight: 400;
+    padding-left: 0;
   }
   .development,
   .copyright {
@@ -96,6 +97,8 @@
     padding-top: 43px;
     display: flex;
     justify-content: flex-start;
+    text-align: left;
+    padding-left: 0;
   }
   a.development__hidden {
     width: 33%;

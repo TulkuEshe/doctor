@@ -52,8 +52,21 @@
   }
 }
 
+
 @media (max-width: $mobile) {
+
+
+  .container > .call{
+    position: absolute;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
   .call {
+    right: 0;
     padding-top: 20px;
     display: flex;
     flex-direction: row;
@@ -63,9 +76,18 @@
   }
   .call__now {
     font-size: 50px;
+
     width: 84%;
+
     padding-bottom: 0;
     font-weight: 500;
+  }
+  .call__now,
+  .call__text {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
   }
   .call-hidden {
     display: none;
@@ -87,5 +109,11 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+  }
+  .call__block {
+    display: flex;
+    width: 73%;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 }

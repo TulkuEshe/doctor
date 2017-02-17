@@ -115,7 +115,7 @@
 
 .button__img {
   background: url('../img/like.png') no-repeat;
-  bacground-size: 100%;
+  background-size: 100%;
   width: 40px;
   hieght: 40px;
   z-index: 100;
@@ -131,6 +131,15 @@
   &--right {
   margin-left: 60px;
   }
+.bottom__flip img::hover {
+  display: none; 
+}
+.bottom__flip--left::hover {
+  display: flex;
+  background-image: url(../img/navigator-right-active.png) no-repeat;
+  background-size: 100%;
+}
+
 }
 @media (max-width: $medium) {
   .bottom {

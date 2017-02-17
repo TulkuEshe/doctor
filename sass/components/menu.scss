@@ -68,7 +68,7 @@
     margin: 0;
     flex-basis: auto;
     margin-top: 52px;
-} 
+}
   .menu__runner {
     order: 2;
     width: 100%;
@@ -131,7 +131,7 @@
  }
 }
 
-@media (max-width: $mobile) { 
+@media (max-width: $mobile) {
   .menu__list {
     display: flex;
     justify-content: flex-start;
@@ -155,7 +155,7 @@
     display: flex;
     width: 100%;
     line-height: 0.7em;
-  }  
+  }
   .menu--top {
     display: flex;
     flex-wrap: nowrap;
@@ -207,6 +207,7 @@
   }
   .menu__link--active::before {
     top: 9px;
+
     width: 6px;
     height: 6px;
     background-color: #3e3d3b;

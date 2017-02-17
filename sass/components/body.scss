@@ -71,18 +71,24 @@ img {
 @media (max-width: $mobile) {
    .body {
     display: flex;
-    max-width: 640px;
-    width: 100%;
+    background-image: none;
     flex-wrap: wrap;
     margin: 0 auto;
+
    }
-   .hidden {
-    display: none;
-   }
-   .pop-up {
-    display: none;
-   }
+
    .main {
     background: #e8e8d6;
-   }
+   
+    }
+    .header {
+    background-color: #e7e7d5;
+    }
+    .hidden {
+    display: none;
+    }
+    .pop-up {
+    display: none;
+  }
+
 }
