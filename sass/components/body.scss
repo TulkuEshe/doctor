@@ -40,12 +40,12 @@ p {
     margin: 0 auto;
     align-items: center;
 }
-
 img {
     width:100%;
     display: block;
     vertical-align: top;
 }
+<<<<<<< HEAD
 * {
     box-sizing: border-box;
 }
@@ -57,6 +57,10 @@ img {
     // margin: 0 auto;
     // box-sizing: border-box;
   }
+=======
+
+@media (max-width: 1500px) {
+>>>>>>> feat: starting mobile
   .main {
     width: 100%;
   }
@@ -84,11 +88,14 @@ img {
     .header {
     background-color: #e7e7d5;
     }
+    .main   {
+      background-color: #f2efe1;  
+    }
     .hidden {
     display: none;
     }
     .pop-up {
     display: none;
-  }
+    }
 
 }

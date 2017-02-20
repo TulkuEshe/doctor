@@ -16,14 +16,18 @@
     background-image: url(../img/star-nochoice.png);
   }
 }
+
 @media (max-width: $medium)  {
+
   .star__wrapper {
     justify-content: flex-start;
     align-items: center;
   }
 }
 
+
 @media (max-width: $mobile) {
+
   .star__wrapper {
     padding-bottom: 34px;
   }
@@ -36,4 +40,5 @@
     background-image: url(../img/no-choice.png);
     }
   }
+
 }
