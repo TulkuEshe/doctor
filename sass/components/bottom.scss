@@ -132,7 +132,7 @@
   margin-left: 60px;
   }
 }
-@media (max-width: 1500px) {
+@media (max-width: $medium) {
   .bottom {
     width: 100%;
     padding-top: 60px;
@@ -142,7 +142,8 @@
     padding-bottom: 38px;
   }
   .bottom__add {
-    right: -45px;
+    right: 45px;
+    width: 100px;
   }
   .bottom__rating {
     justify-content: flex-start;
@@ -161,7 +162,7 @@
     padding-bottom: 62px;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: $mobile) {
   .bottom {
     padding-top: 0;
   }

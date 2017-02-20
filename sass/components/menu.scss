@@ -59,7 +59,7 @@
   display: none;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: $medium) {
   .menu--top {
     display: flex;
     flex-direction: column;
@@ -133,7 +133,7 @@
  }
 }
 
-@media (max-width: 900px) { 
+@media (max-width: $mobile) { 
   .menu__list {
     display: flex;
     justify-content: flex-start;
@@ -209,7 +209,8 @@
   }
   .menu__link--active::before {
     top: 9px;
-    left: -54px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 6px;
     height: 6px;
     background-color: #3e3d3b;

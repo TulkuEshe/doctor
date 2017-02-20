@@ -260,7 +260,7 @@
 .pop-up__inspection img {
    display: none;
 }
-@media (max-width: 1500px) {
+@media (max-width: $medium) {
   .pop-up .info__menu {
     position: relative;
     display: flex;
@@ -269,7 +269,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: $mobile) {
   .pop-up {
     max-width: 640px;
     width: 100%;

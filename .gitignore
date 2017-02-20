@@ -4,6 +4,7 @@
 *.psd
 *.ai
 *.pdf
+*.zip
 css/*.css
 psd/
 node_modules/

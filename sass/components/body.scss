@@ -2,7 +2,6 @@
     background: url('../img/web_v2.jpg') no-repeat;
     background-size: cover;
     display: flex;
-    max-width: 2000px;
     flex-wrap: wrap;
     width: 100%;
     margin: 0;
@@ -46,8 +45,10 @@ img {
     width:100%;
     display: block;
 }
-
-@media (max-width: 1500px) {
+* {
+    box-sizing: border-box;
+}
+@media (max-width: $medium) {
   .body {
     // max-width: 800px;
     // width: 100%;
@@ -66,7 +67,7 @@ img {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: $mobile) {
    .body {
     display: flex;
     max-width: 640px;

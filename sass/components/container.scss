@@ -3,12 +3,12 @@
   margin: 0 auto;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: $medium) {
 .container {
   max-width: 800px;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: $mobile) {
 .container {
   max-width: 640px;
   }

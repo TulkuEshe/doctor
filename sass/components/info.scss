@@ -127,6 +127,7 @@
   display: flex;
   margin-top: 0;
   padding-top: 14px;
+  justify-content: space-between;
 }
 
 .info__menu--pop-up {
@@ -156,7 +157,7 @@
   justify-content: center;
 }
 
-@media (max-width: 1500px) { 
+@media (max-width: $medium) { 
   .info {
     flex-wrap: wrap;
     padding-top: 0;
@@ -174,9 +175,11 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    max-width: auto;
+    max-width: 100%;
     position: relative;
-    margin-left: 54px;
+    padding-left: 54px;
+    flex-basis: 768px;
+    box-sizing: border-box;
   }
   .info__photo {
     display: flex;
@@ -231,7 +234,7 @@
     margin-right: 21px;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: $mobile) {
   .info,
   .info__text {
     display: flex;
@@ -252,6 +255,7 @@
     width: 100%;
     flex-basis: auto;
     max-width: auto;
+
   }
   .info__photo {
     display: flex;
