@@ -4,15 +4,19 @@
 }
 
 @media (max-width: $medium) {
-.container {
+  .container {
   max-width: 800px;
   }
 }
 @media (max-width: $mobile) {
-.container {
+  .container {
   max-width: 640px;
   }
   .container > .call {
     position: relative;
+    justify-content: space-between;
+     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }

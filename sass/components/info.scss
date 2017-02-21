@@ -163,38 +163,43 @@
     padding-top: 0;
   }
   .info__text {
-    order: -1;
-    width: 100%;
+    width: 58%;
     margin-right: 0;
-    display: flex;
-    flex-wrap: wrap;
+    display: inline-block;
     margin-left: 0;
     z-index: 0;
+    padding-left: 44px
   }
   .info__block {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
     width: 100%;
     max-width: 100%;
     position: relative;
-    padding-left: 54px;
-    flex-basis: 768px;
     box-sizing: border-box;
+    padding-top: 150px;
+    padding-left: 54px;
+    padding-right: 54px;
+
   }
   .info__photo {
-    display: flex;
-    align-items: center;
-    max-width: 260px;
-    position: absolute;
-    bottom: 190px;
-    left: 0px;
- }
-  .info__article {
-    width: 73%;
-    margin-left: 235px;
-    padding-left: 20px;
-    padding-right: 10px;
+    display: inline-block;
+    width: 260px;
+    width: 40%;
+    vertical-align: top;
+    padding-top: 40px;
     box-sizing: border-box;
+ }
+ .info__position {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50px;
+  }
+  .info__article {
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 50px;
+    padding-right: 0;
  }
   .info__title {
     display: flex;
@@ -220,9 +225,9 @@
   .info__menu,
   .info__gallery  {
     width: 100%;
-    justify-content: flex-end;
-    padding-left: 45px;
     font-weight: 400;
+    display: flex;
+    justify-content: space-between;
   }
   .info__gallery .info__second-img {
     padding-right: 0;
@@ -230,8 +235,9 @@
   .info__round {
     width: 6px;
     height: 6px;
-    margin-left: 21px;
-    margin-right: 21px;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
   }
 }
 @media (max-width: $mobile) {
@@ -239,9 +245,17 @@
   .info__text {
     display: flex;
   }
+  .info__position {
+    position: absolute;
+    display: block;
+    top: -150px;
+    left: 0;
+  }
   .info__text {
     padding-left: 0;
     position: relative;
+    width: 100%;
+    padding-top: 150px;
   }
   .info__title {
     display: flex;
@@ -254,13 +268,14 @@
     flex-wrap: nowrap;
     width: 100%;
     flex-basis: auto;
-    max-width: auto;
-
+    max-width: 100%;
+    padding-top: 230px;
+    padding-left: 0;
+    padding-right: 0; 
   }
   .info__photo {
     display: flex;
     width: 100%;
-    min-height: 336px;
   }
   .info__photo img,
   .info__gallery,
@@ -270,17 +285,15 @@
   }
   .info__offer {
     margin: 0;
-    width: 89%;
+    width: 87%;
+    display: inline-block;
   }
   .info__menu {
     padding-left: 0;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: absolute;
     left: 0;
-    bottom: 194px;
+    bottom: 214px;
     top: auto;
     padding: 0;
     margin: 0 auto;
@@ -289,10 +302,10 @@
   }
   .info__article {
     width: 100%;
-    min-width: auto;
+    min-width: 100%;
     padding-left: 0;
     padding-right: 0;
-    padding-top: 220px;
+    padding-top: 300px;
     font-size: 30px;
     background-color: #f2efe1;
     margin-left: 0;
@@ -303,21 +316,26 @@
     margin: 0 auto;
     background: none;
     color: #ffffff;
-    background-color: #e5a364;
-    top: 436px;
+    background-color: #ffa44c;
     right: auto;
     left: 0;
     height: auto;
+    top: 59%;
+    transform: translateX(0%);
+    transform: translateY(1%);
     font-size: 40px;
-    display: flex;
-    flex-wrap: nowrap;
+    display: inline-block;
     padding-left: 26px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .info__exam:hover,
+  .info__exam:active {
+    background-color: #e5a364;
   }
   .info__active {
-    display: flex;
+    display: inline-block;
     margin-top: 0;
-    justify-content: center;
-    flex-direction: column-reverse;
     padding-top: 0; 
   }
    .info__block {
@@ -326,16 +344,17 @@
   .info__title {
     max-width: 528px;
   }  
-  .info__title,
-  .info__paragraph {
-    padding-left: 30px;
-  }
   .info__doctor-img {
     display: block;
+    width: 640px;
   }
   .info__hidden-button {
-    display: block;
+    display: inline-block;
     width: 24px;
     height: 68px;
+  }
+  .info__round {
+    width: 12px;
+    height: 12px;
   }
 }

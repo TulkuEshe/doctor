@@ -99,13 +99,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    &--first {
-    }
-    &--last {
-    }
+
     &--active::before {
       top: 34px;
-      left: 41px;
+      left: 50%;
+      transform: translateX(-50%);
     }
  }
   .menu__link a {
@@ -209,12 +207,12 @@
   }
   .menu__link--active::before {
     top: 9px;
-    left: 50%;
-    transform: translateX(-50%);
     width: 6px;
     height: 6px;
     background-color: #3e3d3b;
     border-radius: 50%;
     border: 2px solid #ffffff;
+    left: -1em;
+    transform: translateX(-18%);
   }
 }

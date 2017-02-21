@@ -44,6 +44,7 @@ p {
 img {
     width:100%;
     display: block;
+    vertical-align: top;
 }
 * {
     box-sizing: border-box;
@@ -74,12 +75,14 @@ img {
     width: 100%;
     flex-wrap: wrap;
     margin: 0 auto;
-    }
-}
-.hidden {
+   }
+   .hidden {
     display: none;
-}
-
-.pop-up {
+   }
+   .pop-up {
     display: none;
+   }
+   .main {
+    background: #e8e8d6;
+   }
 }

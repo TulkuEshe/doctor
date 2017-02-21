@@ -84,7 +84,13 @@
     font-size: 28px;
     font-weight: 400;
   }
+  .development,
   .copyright {
+  padding-left: 0;
+  padding-right: 0;
+  }
+  .copyright {
+    width: 86%;
     font-size: 28px;
     font-weight: 400;
     padding-top: 43px;

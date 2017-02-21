@@ -53,23 +53,17 @@
 }
 
 @media (max-width: $mobile) {
-  .container > .call{
-    position: absolute;
-    top: 0px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
   .call {
-    right: 25px;
     padding-top: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    top: auto;
+    justify-content: space-between;
   }
   .call__now {
     font-size: 50px;
-    width: 80%;
+    width: 84%;
     padding-bottom: 0;
     font-weight: 500;
   }
@@ -77,15 +71,15 @@
     display: none;
   }
   .call__text {
-    width: 80%;
     font-size: 22px;
     font-weight: 500;
+    display: flex;
+    justify-content: flex-end;
   }
   .call__menu {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 7px;
 }
   .call__menu img {
     width: 80px;
