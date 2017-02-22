@@ -15,7 +15,7 @@
 .call__now {
   font-size: 31.04px;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 10px;
 }
 
@@ -75,12 +75,8 @@
     justify-content: space-between;
   }
   .call__now {
-    font-size: 50px;
-
-    width: 84%;
-
+    font-size: 30px;
     padding-bottom: 0;
-    font-weight: 500;
   }
   .call__now,
   .call__text {
@@ -94,9 +90,7 @@
   }
   .call__text {
     font-size: 22px;
-    font-weight: 500;
-    display: flex;
-    justify-content: flex-end;
+    text-align: right;
   }
   .call__menu {
     display: flex;
@@ -104,16 +98,12 @@
     align-items: center;
 }
   .call__menu img {
-    width: 80px;
-    height: 80px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    width: 50px;
+
   }
   .call__block {
-    display: flex;
-    width: 73%;
-    flex-direction: column;
-    justify-content: flex-end;
+    display: block;
+    width: calc(100% - 60px);
+
   }
 }

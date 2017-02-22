@@ -10,13 +10,13 @@
 .bottom {
   width:100%;
 }
-
 .bottom__transparent {
   display: flex;
   width: 100%;
   position: relative;
+  align-items: center;
+  justify-content: center
 }
-
 .bottom__add {
   display: flex;
   z-index: 2;
@@ -50,57 +50,47 @@
   align-items: center;
   justify-content: center;
 }
-
 .bottom__hidden {
   display: none;
 }
 .bottom__reviews {
-  display: flex;
-  padding-bottom: 35px;
-  justify-content: flex-start;
-  padding-left: 470px;
+  padding-bottom: 27px;
+  width: 50%;;
   font-size: 45px;
   text-transform: uppercase;
   font-weight: 400;
-  width: 70%;
 }
-
-
 .bottom__opinion {
   display: flex;
+  max-width: 1040px;
 }
-
 .bottom__item {
   width: 50%;
   max-width: 500px;
-   font-size: 18px;
-   font-weight: 400;
+  font-size: 18px;
+  font-weight: 400;
    &--left {
     padding-right: 60px;
    }
 }
-
 .bottom__name {
   font-style: italic;
   padding-bottom: 18px;
 }
-
 .bottom__more {
   color: #865729;
   text-transform: uppercase;
 }
-
 .bottom__text {
   padding-bottom: 28px;
-  &--left {
-    padding-bottom: 48px;
+  max-width: 480px;
+  &--right {
+    padding-right: 32px;
   }
 }
-
 .bottom__button {
   display: flex;
 }
-
 .button__img {
   background: url('../img/like.png') no-repeat;
   background-size: 100%;
@@ -108,7 +98,6 @@
   hieght: 40px;
   z-index: 100;
 }
-
 .bottom__flip {
   display: flex;
   justify-content: center;
@@ -117,7 +106,6 @@
   margin-right: 60px;
   }
   &--right {
-  margin-left: 60px;
   }
 .bottom__flip img::hover {
   display: none;
@@ -127,22 +115,32 @@
   background-image: url(../img/navigator-right-active.png) no-repeat;
   background-size: 100%;
 }
-
 }
+
 @media (max-width: $medium) {
   .bottom {
     width: 100%;
     padding-top: 60px;
   }
+  .bottom__opinion {
+    padding-right: 146px;
+    width: 56%;
+    max-width: 100%;
+  }
   .bottom__reviews {
-    padding-left: 108px;
-    padding-bottom: 38px;
+    padding-bottom: 30px;
+    width: 80%;
   }
   .bottom__add {
     right: 45px;
     width: 100px;
   }
-
+  .bottom__flip--left {
+    margin-right: 0;
+  }
+  .bottom__item--left {
+    padding-right: 0;
+  }
   .bottom__item {
     width: 100%;
   &--hidden {
@@ -154,20 +152,20 @@
   }
   .bottom__white {
     padding-bottom: 62px;
+    justify-content: space-around;
   }
 }
 
 @media (max-width: $mobile) {
-
   .bottom {
     padding-top: 0;
   }
   .bottom__reviews {
     font-size: 50px;
     padding-top: 0;
-    padding-left: 31px;
     background-color: #f2efe1;
-    padding-left: 31px;
+    padding-left: 0;
+    width: 96%;
   }
   a.bottom__link {
     display: none;
@@ -188,41 +186,42 @@
   }
   .bottom__transparent {
     background-color: #f2efe1;
+    padding-left: 31px;
+    padding-right: 31px;
   }
   .bottom__white {
-    padding-top: 42px;
+    padding-top: 64px;
     padding-bottom: 60px;
   }
-
   .bottom__name {
     font-size: 32px;
   }
   .bottom__text {
     font-size: 30px;
+    &--left {
+      line-height: 1.2em;
+      padding-bottom: 42px;
+    }
   }
   .bottom__flip--left,
   .bottom__flip--right {
     margin: 0;
   }
+  .bottom__item {
+    max-width: 518px;
+    width: 100%;
+  }
   .bottom__flip--left {
     padding-right: 26px;
   }
-
   .bottom__flip--right {
-    padding-left: 10px;
-  }
-  .bottom__text--left {
-    width: 91%;
-    max-width: 485px;
-    padding-right: 4px;
-    line-height: 1.2em;
-    padding-bottom: 42px;
   }
   .bottom__button {
     font-size: 36.29px;
     font-weight: 300;
   }
-  .bottom__add {
-    right: 36px;
+  .bottom__opinion {
+    width: 85%;
+    padding-right: 43px;
   }
 }

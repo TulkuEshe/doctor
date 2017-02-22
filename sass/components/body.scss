@@ -45,7 +45,7 @@ img {
     display: block;
     vertical-align: top;
 }
-<<<<<<< HEAD
+
 * {
     box-sizing: border-box;
 }
@@ -57,10 +57,7 @@ img {
     // margin: 0 auto;
     // box-sizing: border-box;
   }
-=======
 
-@media (max-width: 1500px) {
->>>>>>> feat: starting mobile
   .main {
     width: 100%;
   }
@@ -81,15 +78,23 @@ img {
 
    }
 
-   .main {
-    background: #e8e8d6;
-   
-    }
+
     .header {
-    background-color: #e7e7d5;
+      background-color: #e7e7d5;
+      padding: 0;
+      left: 0;
+      top: 0;
+      background: rgba(0,0,0,0.6);
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      z-index: 10;
+      display: none;
     }
     .main   {
-      background-color: #f2efe1;  
+      background-color: #f2efe1;
+      padding-left: 10px;
+      padding-right: 10px;
     }
     .hidden {
     display: none;
