@@ -104,6 +104,16 @@
   .call__block {
     display: block;
     width: calc(100% - 60px);
-
+  }
+}
+@media (max-width: $small) {
+  .call {
+    padding-top: 10px;
+  }
+  .call__now {
+    font-size: 28px;
+  }
+  .call__text {
+    font-size: 13.5px;
   }
 }

@@ -225,3 +225,59 @@
     padding-right: 43px;
   }
 }
+
+@media (max-width: $small) {
+  .bottom__flip--left, 
+  .bottom__flip--right {
+    margin: 10px;
+  }
+  .bottom__reviews {
+    padding: 20px;
+  }
+  .bottom__reviews {
+    width: 100%;
+    font-size: 30px;
+  }
+
+  .bottom__hidden {
+    width: 34px;
+    height: 34px;
+  }
+  .bottom__round {
+    width: 70px;
+    height: 70px;
+  }
+  .bottom__add {
+    right: 0px;
+    top: 6px;
+    width: 80px;
+  }
+  .bottom__white {
+    padding-top: 14px;
+    padding-bottom: 10px;
+  }
+  .bottom__flip--left {
+    padding-right: 0;
+  }
+  .bottom__name {
+    font-size: 24px;
+    padding-bottom: 5px;
+  }
+  .bottom__text.bottom__text--left {
+    padding-bottom: 10px;
+    font-size: 21px;
+    line-height: 1em;
+  }
+  .bottom__flip {
+    width: 8px;
+  }
+  .bottom__opinion {
+    width: 100%;
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+  .bottom__button {
+    font-size: 23px;
+    font-weight: 400;
+  }
+}

@@ -31,6 +31,7 @@
   }
   &--active {
     position: relative;
+    z-index: 2;
   }
   &--active::before {
     content: "";

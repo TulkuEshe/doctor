@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <script src="node_modules/jquery/dist/jquery.min.js" ></script>
   <title>Home page - DR. WAYNE TROWELL</title>
 </head>
   <body class="body">
@@ -90,16 +91,16 @@
                   </div>
                 </div>
                 <ul class="info__menu">
-                  <li class="info__item">
-                    <a class="info__link" href="">our team</a>
+                  <li class="info__item info__item--team">
+                    <a class="info__link" >our team</a>
                   </li>
                   <span class="info__round"></span>
-                  <li class="info__item">
-                    <a class="info__link" href="">why we</a>
+                  <li class="info__item info__item--we">
+                    <a class="info__link " >why we</a>
                   </li>
                   <span class="info__round"></span>
-                  <li class="info__item">
-                    <a class="info__link" href="">blog</a>
+                  <li class="info__item info__item--blog">
+                    <a class="info__link">blog</a>
                   </li>
                 </ul>
     					</div>
@@ -131,12 +132,17 @@
         <span class="bottom__flip bottom__flip--left"><img src="img/navigation-left.png"></span>
         <div class="bottom__opinion">
           <div class="bottom__item  bottom__item--left">
-            <div class="star__wrapper">
-              <div class="star  star--full"></div>
-              <div class="star  star--full"></div>
-              <div class="star  star--full"></div>
-              <div class="star  star--full"></div>
-              <div class="star  star--empty"></div>
+            <div class="star__wrapper" id="reviewStars-input">
+              <input class="star" id="star-0" type="radio" name="reviewStars"/>
+              <label title="bad" for="star-0"></label>
+              <input class="star" id="star-1" type="radio" name="reviewStars"/>
+              <label title="poor" for="star-1"></label>
+              <input class="star" id="star-2" type="radio" name="reviewStars"/>
+              <label title="regular" for="star-2"></label>
+              <input class="star" id="star-3" type="radio" name="reviewStars"/>
+              <label title="good" for="star-3"></label>
+              <input class="star" id="star-4" type="radio" name="reviewStars"/>
+              <label title="gorgeous" for="star-4"></label>
             </div>
             <div class="bottom__name">Ryan Batfan McClain</div>
             <div class="bottom__text bottom__text--left">I have been going to Dr. Trowell for 15 yrs. Now. He is professional, yet a wonderful person and dentist. I would recommend him to everyone. He and his entire staff are excellent.</div>
@@ -146,12 +152,17 @@
             </div>
           </div>
           <div class="bottom__item  bottom__item--right bottom__item--hidden">
-            <div class="star__wrapper">
-              <div class="star  star--full"></div>
-              <div class="star  star--full"></div>
-              <div class="star  star--full"></div>
-              <div class="star  star--full"></div>
-              <div class="star  star--empty"></div>
+            <div class="star__wrapper" id="reviewStars-input">
+              <input class="star" id="star-5" type="radio" name="reviewStars"/>
+              <label title="bad" for="star-5"></label>
+              <input class="star" id="star-6" type="radio" name="reviewStars"/>
+              <label title="poor" for="star-6"></label>
+              <input class="star" id="star-7" type="radio" name="reviewStars"/>
+              <label title="regular" for="star-7"></label>
+              <input class="star" id="star-8" type="radio" name="reviewStars"/>
+              <label title="good" for="star-8"></label>
+              <input class="star" id="star-9" type="radio" name="reviewStars"/>
+              <label title="gorgeous" for="star-9"></label>
             </div>
             <div class="bottom__name">Hope Stern</div>
             <div class="bottom__text  bottom__text--right">Best Dentist I have ever had! My entire family have been patients of Dr. Trowell for over 16 years! He was the first dentist my children saw when we moved down here and they still visit him twice a year 16 years ...
@@ -183,31 +194,43 @@
   	</footer>
   	<section class="pop-up">
   		<article class="pop-up__item  pop-up__item--request">
-  		  <span></span>
+  		  <div class="pop-up__close"></div>
         <div class="pop-up__content-review">
-          <h1 class="pop-up__paragraph  pop-up__paragraph--request">REquest</br> an appointment</h1>
+          <h1 class="pop-up__paragraph  pop-up__paragraph--request">Request</br> an appointment</h1>
           <p class="pop-up__text-contact">Please fill in this simple form and we will contact you
 as soon as possible.</p>
           <div class="pop-up__block  pop-up__block--review">
             <div class="pop-up__write  pop-up__write--name">
-              <label class="label">Name</label>
-              <input class="input" type="text" name="name" required="Please fill in the required field" pattern>
+              <div class="pop-up__left">
+                Name
+              </div>
+              <div class="pop-up__right">
+                <input class="input" type="text" name="name" required="Please fill in the required field" pattern>
+              </div>
               <div class="pop-up__inspection">
                 <img src="img/correctly.png">
                 <img src="img/wrong.png">
               </div>
             </div>
             <div class="pop-up__write  pop-up__write--name" >
-              <label class="label">Phone number</label>
-              <input class="input" type="phone-number" name="phone-number" required="Please fill in the required field" pattern>
+              <div class="pop-up__left pop-up__left--phone">
+                Phone number
+              </div>
+              <div class="pop-up__right  pop-up__right--phone">
+                <input class="input" type="phone-number" name="phone-number" required="Please fill in the required field" pattern>
+              </div>
               <div class="pop-up__inspection">
                 <img src="img/correctly.png">
                 <img src="img/wrong.png">
               </div>
             </div>
             <div class="pop-up__write  pop-up__write--email">
-              <label class="label">E-mail</label>
-              <input class="input" type="email" name="email" required="Please fill in the required field" pattern>
+              <div class="pop-up__left">
+              E-mail
+              </div>
+              <div class="pop-up__right">
+                <input class="input" type="email" name="email" required="Please fill in the required field" pattern>
+              </div>
               <div class="pop-up__inspection">
                 <img src="img/correctly.png">
                 <img src="img/wrong.png">
@@ -236,18 +259,18 @@ Fri 8am to 12pm</div>
       </div>
   		</article>
   		<article class="pop-up__item  pop-up__item--blog">
-  			<span></span>
+  			<div class="pop-up__close"></div>
   			<div class="pop-up__content">
   				<menu class="info__menu  info__menu--pop-up">
-                <div class="info__item">
+                <div class="info__item pop-up__item--team">
                       <a class="info__link" href="">our team</a>
                 </div>
-                <span class="info__round"></span>
-                    <div class="info__item">
+                <span class="info__round" ></span>
+                    <div class="info__item  info__item--we">
                       <a class="info__link" href="">why we</a>
                     </div>
                     <span class="info__round"></span>
-                    <div class="info__item">
+                    <div class="info__item info__item--blog">
                       <span class="pop-up__selected-page">
                         <a class="info__link" href="">blog</a>
                       </span>
@@ -275,23 +298,23 @@ Fri 8am to 12pm</div>
   			</div>
   		</article>
   		<article class="pop-up__item pop-up__item--team">
-  			<span></span>
+  			<div class="pop-up__close"></div>
         <div class="pop-up__content">
           <div class="pop-up__top">
             <menu class="info__menu info__menu--pop-up">
-                  <div class="info__item">
+                  <div class="info__item info__item--team">
                     <span class="pop-up__selected-page">
-                      <a class="info__link" href="">our team</a>
+                      <a class="info__link" href="">Our team</a>
                     </span>
                   </div>
                   <span class="info__round"></span>
-                      <div class="info__item">
-                        <a class="info__link" href="">why we</a>
+                      <div class="info__item info__item--we">
+                        <a class="info__link" href="">Why we</a>
                       </div>
                       <span class="info__round"></span>
-                      <div class="info__item">
+                      <div class="info__item info__item--blog">
                         <span>
-                          <a class="info__link" href="">blog</a>
+                          <a class="info__link" href="">Blog</a>
                         </span>
                       </div>
             </menu>
@@ -322,19 +345,27 @@ Fri 8am to 12pm</div>
         </div>
   		</article>
   		<article class="pop-up__item pop-up__item--new-review">
-  			<span></span>
+  			<div class="pop-up__closed"></div>
   			<div class="pop-up__content-review">
   				<h1 class="pop-up__paragraph">write your review</h1>
   				<p class="pop-up__text-contact">Please fill in this simple form and we will contact you
 as soon as possible.</p>
           <div class="pop-up__block pop-up__block--review">
             <div class="pop-up__write pop-up__write--name">
-              <label class="label">Name</label>
-            	<input class="input" type="text" name="" required>
+                <div class="pop-up__left">
+                  Name
+                </div>
+                <div class="pop-up__right">
+            	     <input class="input" type="text" name="" required>
+                 </div>
             </div>
             <div class="pop-up__write pop-up__write--email" >
-              <label class="label">E-mail</label>
-            	<input class="input" type="text" name="" required>
+                <div class="pop-up__left">
+                  E-mail
+                </div>
+                <div class="pop-up__right">
+            	   <input class="input" type="text" name="" required>
+               </div>
             </div>
             <div class="pop-up__rating">
             	<div class="pop-up__your">Your rating</div>
@@ -356,5 +387,29 @@ as soon as possible.</p>
       </div>
   	 </article>
   	</section>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.bottom__add').click(function (){
+          $('.pop-up__item').removeClass('pop-up__item--active')
+          $('.pop-up__item--new-review').addClass('pop-up__item--active')
+            $('.pop-up').addClass('pop-up--active')
+        });
+        $('.info__item--team').click(function (){
+          $('.pop-up__item').removeClass('pop-up__item--active')
+          $('.pop-up__item--team').addClass('pop-up__item--active')
+            $('.pop-up').addClass('pop-up--active')
+        });
+        $('.menu__request').click(function (){
+          $('.pop-up__item').removeClass('pop-up__item--active')
+          $('.pop-up__item--request').addClass('pop-up__item--active')
+            $('.pop-up').addClass('pop-up--active')
+        });
+        $('.info__item--blog').click(function (){
+          $('.pop-up__item').removeClass('pop-up__item--active')
+          $('.pop-up__item--blog').addClass('pop-up__item--active')
+            $('.pop-up').addClass('pop-up--active')
+        });
+     });
+    </script>
   </body>
 </html>
