@@ -14,5 +14,8 @@
   "scripts": {
     "build": "gulp style",
     "start": "gulp serve"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1"
   }
 }
