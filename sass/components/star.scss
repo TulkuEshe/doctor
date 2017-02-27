@@ -12,11 +12,11 @@
   background-size: 100%;
   background-position: 0 0;
 }
-#reviewStars-input input:checked ~ label, #reviewStars-input label, #reviewStars-input label:hover, #reviewStars-input label:hover ~ label {
+.star__wrapper--homing input:checked ~ label, .star__wrapper--homing label, .star__wrapper--homing label:hover, .star__wrapper--homing label:hover ~ label {
   background: url(../img/star.png) no-repeat;
 }
 
-#reviewStars-input {
+.star__wrapper--homing {
   /*fix floating problems*/
   overflow: hidden;
   *zoom: 1;
@@ -25,7 +25,7 @@
   float: left;
 }
 
-#reviewStars-input input {
+.star__wrapper--homing input {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   width: 24px;
@@ -36,44 +36,43 @@
   z-index: 0;
 }
 
-#reviewStars-input input:checked ~ label {
+.star__wrapper--homing input:checked ~ label {
   background-position: 0 -40px;
   width: 24px;
   height: 26px;
 }
 
-#reviewStars-input label {
+.star__wrapper--homing label {
   background-position: 0 0;
   width: 24px;
   height: 26px;
-  float: right;
   cursor: pointer;
   position: relative;
   z-index: 1;
 }
 
-#reviewStars-input label:hover, #reviewStars-input label:hover ~ label {
+.star__wrapper--homing label:hover, .star__wrapper--homing label:hover ~ label {
   background-position: 0 -40px;
   width: 24px;
   height: 26px;
 }
 
-#reviewStars-input #star-0 {
+ .star-0 {
   left: 0px;
 }
-#reviewStars-input #star-1 {
+ .star-1 {
   left: 53px;
 }
-#reviewStars-input #star-2 {
+ .star-2 {
   left: 106px;
 }
-#reviewStars-input #star-3 {
+ .star-3 {
   left: 159px;
 }
-#reviewStars-input #star-4 {
+ .star-4 {
   left: 212px;
 }
-#reviewStars-input #star-5 {
+ .star-5 {
   left: 265px;
 }
 
@@ -99,11 +98,10 @@
 @media (max-width: $small) {
   .star {
     width: 32px;
-    height: 34px; 
+    height: 34px;
     margin-right: 8px;
-  } 
+  }
   .star__wrapper {
     padding-bottom: 0;
   }
 }
-

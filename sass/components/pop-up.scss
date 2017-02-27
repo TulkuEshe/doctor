@@ -10,9 +10,8 @@
   }
 }
 .pop-up__close {
-  position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 62px;
+  right: 117px;
   display: inline-block;
   width: 30px;
   height: 30px;
@@ -20,6 +19,7 @@
   background-image: url(../img/delete.png);
   background-repeat: no-repeat;
   background-size: 100%;
+  position: fixed;
 }
 .pop-up__item {
   border-radius: 50%;
@@ -97,12 +97,18 @@
 .pop-up__web-link {
   font-weight: 600;
   color: #865729;
+  background: url(../img/link-img.png) no-repeat;
+  background-position: 0 12%;
+}
+.pop-up__info .pop-up__web-link {
+  background: none;
 }
 .pop-up__website {
   padding-top: 18px;
 }
 .pop-up__website p {
   padding-bottom: 12px;
+  padding-left: 20px;
 }
 .pop-up__selected-page {
   background-color: #eed2bf;
@@ -284,6 +290,12 @@
   min-width: 72px;
 }
 
+.pop-up__flip.pop-up__flip--left {
+    background: url(../img/navigation-left.png) no-repeat;
+    width: 16px;
+    background-position: 0 50%;
+}
+
 @media (max-width: $medium) {
   .pop-up .info__menu {
     position: relative;
@@ -291,12 +303,22 @@
     padding-left: 0;
     justify-content: center;
   }
+  .pop-up .info__menu .info__menu--pop-up {
+    padding-bottom: 60px;
+  }
 }
 
 @media (max-width: $popup) {
   .pop-up {
     width: 100%;
-    height: 100%;
+  }
+  .pop-up__close {
+    top: 29px;
+    right: 96px;
+    background-image: url(../img/close-mobile.png);
+  }
+  .pop-up__leaf {
+    display: none;
   }
   .pop-up .info__menu {
     position: relative;
@@ -306,16 +328,19 @@
     left: auto;
     bottom: auto;
     top: auto;
-    padding-bottom: 60px;
+    padding-bottom: 36px;
     margin: 0;
-    padding: 0;
+    padding-top: 0;
+    order: -1;
+    padding-right: 0;
   }
   .pop-up__item {
     max-width: 600px;
     max-height: 100%;
     border-radius: 0;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    margin-top: 78px;
+    margin-bottom: 51px;
+    height: auto;
   }
   .pop-up__after-menu {
     display: block;
@@ -402,7 +427,7 @@
   .pop-up input {
     width: 55%;
   }
-  .textarea {
+  .pop-up .textarea {
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 10px;
@@ -434,7 +459,7 @@
   }
   .pop-up__item--active input.input {
     width: 52%;
-  } 
+  }
   .pop-up .label {
     font-size: 16px;
   }

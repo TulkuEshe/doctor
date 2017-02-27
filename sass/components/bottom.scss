@@ -1,7 +1,7 @@
 .bottom__white {
   background: #ffffff;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin: 0 auto;
   width: 100%;
   padding-top: 38px;
@@ -95,26 +95,36 @@
   background: url('../img/like.png') no-repeat;
   background-size: 100%;
   width: 40px;
-  hieght: 40px;
+  height: 40px;
   z-index: 100;
 }
 .bottom__flip {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 0;
+  width: 16px;
   &--left {
-  margin-right: 60px;
+    background: url(../img/navigation-left.png) no-repeat;
+    background-position: 50%;
   }
   &--right {
+    background: url(../img/navigation-right.png) no-repeat;
+    background-position: 50%;
   }
-.bottom__flip img::hover {
+}
+.bottom__flip img:hover {
   display: none;
 }
-.bottom__flip--left::hover {
+.bottom__flip--left:hover {
+  display: flex;
+  background-image: url(../img/navigator-left-active.png) no-repeat;
+  background-size: 100%;
+}
+.bottom__flip--right:hover {
   display: flex;
   background-image: url(../img/navigator-right-active.png) no-repeat;
   background-size: 100%;
-}
 }
 
 @media (max-width: $medium) {
@@ -214,8 +224,6 @@
   .bottom__flip--left {
     padding-right: 26px;
   }
-  .bottom__flip--right {
-  }
   .bottom__button {
     font-size: 36.29px;
     font-weight: 300;
@@ -227,9 +235,10 @@
 }
 
 @media (max-width: $small) {
-  .bottom__flip--left, 
+  .bottom__flip--left,
   .bottom__flip--right {
     margin: 10px;
+    background-position: 0 50%;
   }
   .bottom__reviews {
     padding: 20px;
@@ -238,7 +247,6 @@
     width: 100%;
     font-size: 30px;
   }
-
   .bottom__hidden {
     width: 34px;
     height: 34px;
@@ -267,9 +275,6 @@
     padding-bottom: 10px;
     font-size: 21px;
     line-height: 1em;
-  }
-  .bottom__flip {
-    width: 8px;
   }
   .bottom__opinion {
     width: 100%;
