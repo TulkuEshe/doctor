@@ -1685,6 +1685,7 @@ select > option {
   .star__wrapper {
     padding-bottom: 0; } }
 
+<<<<<<< HEAD
 .hamburger {
   width: 60px;
   height: 60px;
@@ -1710,3 +1711,10 @@ select > option {
     left: 50%;
     position: absolute;
     transform: translate(-50%); }
+=======
+.services {
+  display: flex;
+  width: 100%; }
+  .services .header {
+    width: 360px; }
+>>>>>>> feat: Start services
