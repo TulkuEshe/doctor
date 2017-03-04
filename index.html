@@ -132,7 +132,7 @@
         <span class="bottom__flip bottom__flip--left"></span>
         <div class="bottom__opinion">
           <div class="bottom__item  bottom__item--left">
-            <div class="star__wrapper star__wrapper--homing">
+            <div class="star__wrapper star__wrapper--allocation">
               <input class="star star-0" type="radio" name="reviewStars"/>
               <label title="bad" for="star-0"></label>
               <input class="star star-1" type="radio" name="reviewStars"/>
@@ -408,6 +408,10 @@ as soon as possible.</p>
           $('.pop-up__item').removeClass('pop-up__item--active')
           $('.pop-up__item--blog').addClass('pop-up__item--active')
             $('.pop-up').addClass('pop-up--active')
+        });
+        $('.pop-up__close').click(function (){
+          $('.pop-up__item').removeClass('pop-up__item--active')
+          $('.pop-up').removeClass('pop-up--active')
         });
      });
     </script>

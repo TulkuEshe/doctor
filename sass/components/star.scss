@@ -12,11 +12,11 @@
   background-size: 100%;
   background-position: 0 0;
 }
-.star__wrapper--homing input:checked ~ label, .star__wrapper--homing label, .star__wrapper--homing label:hover, .star__wrapper--homing label:hover ~ label {
+.star__wrapper--allocation input:checked ~ label, .star__wrapper--allocation label, .star__wrapper--allocation label:hover, .star__wrapper--allocation label:hover ~ label {
   background: url(../img/star.png) no-repeat;
 }
 
-.star__wrapper--homing {
+.star__wrapper--allocation {
   /*fix floating problems*/
   overflow: hidden;
   *zoom: 1;
@@ -25,7 +25,7 @@
   float: left;
 }
 
-.star__wrapper--homing input {
+.star__wrapper--allocation input {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   width: 24px;
@@ -36,13 +36,13 @@
   z-index: 0;
 }
 
-.star__wrapper--homing input:checked ~ label {
+.star__wrapper--allocation input:checked ~ label {
   background-position: 0 -40px;
   width: 24px;
   height: 26px;
 }
 
-.star__wrapper--homing label {
+.star__wrapper--allocation label {
   background-position: 0 0;
   width: 24px;
   height: 26px;
@@ -51,7 +51,7 @@
   z-index: 1;
 }
 
-.star__wrapper--homing label:hover, .star__wrapper--homing label:hover ~ label {
+.star__wrapper--allocation label:hover, .star__wrapper--allocation label:hover ~ label {
   background-position: 0 -40px;
   width: 24px;
   height: 26px;
@@ -74,6 +74,9 @@
 }
  .star-5 {
   left: 265px;
+}
+input.star:hover ~ .star__wrapper--allocation label  {
+
 }
 
 @media (max-width: $medium)  {
