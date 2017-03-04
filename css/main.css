@@ -1,5 +1,4 @@
 .body {
-  background: url("../img/web_v2.jpg") no-repeat;
   background-size: cover;
   display: flex;
   flex-wrap: wrap;
@@ -8,8 +7,16 @@
   font-family: 'Calibri', sans-serif;
   box-sizing: border-box;
   background-attachment: fixed; }
+<<<<<<< HEAD
   .body--no-overflow {
     overflow: hidden; }
+=======
+  .body--home {
+    background-image: url("../img/web_v2.jpg") no-repeat; }
+  .body--services {
+    background-color: #f8e9d1;
+    background-image: url(../img/services/services-bg.jpg); }
+>>>>>>> feat: desktop with animation
 
 html {
   margin: 0; }
@@ -1789,16 +1796,49 @@ select > option {
   .nav--top {
     padding: 0; } }
 
+<<<<<<< HEAD
 >>>>>>> feat: services html and css for desktop and tablet
+=======
+.appointment {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  position: relative;
+  padding-left: 80px;
+  text-align: left;
+  max-width: 320px; }
+  .appointment::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 20px;
+    background-color: #ffa44c;
+    background-image: url(../img/services/request-arrow.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%; }
+
+.preload1 .services__item::before, .preload1 .services__item::after {
+  width: 0; }
+
+.preload2 .services__decoration {
+  opacity: 0; }
+
+.preload2 .services__decoration::after {
+  height: 0; }
+
+.preload3 .services__description,
+.preload3 .services__image {
+  opacity: 0; }
+
+>>>>>>> feat: desktop with animation
 .services {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  min-height: 100vh;
-  background-image: url(../img/services/services-bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; }
+  min-height: 100vh; }
   .services .header {
     width: 360px; }
 <<<<<<< HEAD
@@ -1822,22 +1862,36 @@ select > option {
     display: flex;
     align-items: center;
     margin-top: 50px;
-    margin-bottom: 50px; }
+    margin-bottom: 20px;
+    font-family: 'Noto Sans', Arial, sans-serif;
+    overflow: hidden; }
+  .services__title {
+    font-family: Calibri, Arial, sans-serif;
+    margin: 0;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    font-size: 25px;
+    opacity: 0.8;
+    padding-top: 10px;
+    padding-bottom: 10px; }
   .services__header {
     padding-left: 1vw; }
+  .services__line {
+    width: 100%;
+    height: 2px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3; }
   .services__list {
     display: flex;
-    flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    padding-top: 200px; }
-    .services__list::before {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 2px; }
+    padding-top: 200px;
+    transition: 0.5s; }
   .services__item {
-    width: 20%;
+    width: 330px;
     padding-top: 34px;
     position: relative;
     text-align: center; }
@@ -1848,7 +1902,9 @@ select > option {
       width: calc(50% - 6px);
       background: #454443;
       height: 2px;
-      top: 0; }
+      top: 0;
+      transition: 2s;
+      transition-timing-function: ease-in-out; }
     .services__item::before {
       left: 0; }
     .services__item::after {
@@ -1872,7 +1928,11 @@ select > option {
     position: absolute;
     top: -7px;
     left: 50%;
-    transform: translateX(-50%); }
+    transform: translateX(-50%);
+    transition: 1s;
+    opacity: 1;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.5s; }
     .services__decoration::after {
       content: "";
       width: 2px;
@@ -1882,7 +1942,32 @@ select > option {
       bottom: -34px;
       background: #454443;
       left: 50%;
-      transform: translateX(-50%); }
+      transform: translateX(-50%);
+      transition: 1s;
+      transition-timing-function: ease-in-out;
+      transition-delay: 0.8s; }
+  .services__reverse {
+    transform: rotate(-180deg); }
+  .services__controls {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 30px;
+    transition: 0.3s;
+    transition-timing-function: ease-out; }
+    .services__controls--hidden {
+      visibility: hidden; }
+  .services__control {
+    margin: 5px;
+    opacity: 0.5;
+    cursor: pointer; }
+    .services__control:hover {
+      opacity: 1; }
+
+.services__description,
+.services__image {
+  opacity: 1;
+  transition: 1.5s; }
 
 .services__item--above .services__decoration::after {
   top: -34px; }
@@ -1923,5 +2008,55 @@ select > option {
     right: auto;
     width: 100%; }
   .services__header {
+<<<<<<< HEAD
     padding-left: 0; } }
 >>>>>>> feat: services html and css for desktop and tablet
+=======
+    padding-left: 0; }
+  .services__list {
+    display: block;
+    padding: 20px 10px 0; }
+  .services__item {
+    width: 100%;
+    padding-left: 120px;
+    padding-top: 0; }
+    .services__item--active .services__image {
+      background-color: #ffa44c; }
+    .services__item::before {
+      content: none; }
+    .services__item::after {
+      right: auto;
+      width: 2px;
+      height: calc(100% - 90px);
+      top: 90px;
+      left: 45px; }
+    .services__item:last-child::after {
+      content: none; }
+  .services__decoration {
+    display: none; }
+  .services__item--below .services__image,
+  .services__item--above .services__description {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none; }
+  .services__image {
+    width: 90px;
+    height: 90px;
+    min-height: 90px;
+    border: 2px solid #454443;
+    border-radius: 50%; }
+    .services__image img {
+      max-width: 50px;
+      max-height: 50px; }
+  .services__item--below .services__image,
+  .services__image {
+    position: absolute;
+    left: 0;
+    top: 0; }
+  .services__title {
+    text-align: left; }
+  .services__copy {
+    text-align: left;
+    padding: 40px 0; } }
+>>>>>>> feat: desktop with animation

@@ -1,0 +1,22 @@
+.appointment {
+  padding: 20px;
+  background-color: $white;
+  border-radius: 50px;
+  position: relative;
+  padding-left: 80px;
+  text-align: left;
+  max-width: 320px;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 20px;
+    background-color: $yellow;
+    background-image: url(../img/services/request-arrow.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+  }
+}
