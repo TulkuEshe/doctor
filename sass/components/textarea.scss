@@ -1,0 +1,19 @@
+.textarea {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Noto Sans', 'Arial', sans-serif;
+  max-width: 481px;
+  width: 100%;
+  border: none;
+  margin: 0 auto;
+  border-bottom: 3px solid #a0bdb6;
+  margin-bottom: 20px;
+  max-height: 198px;
+  resize: none;
+  &:focus {
+    outline: none;
+  }
+}
+.textarea--request {
+  max-height: 100px;
+}

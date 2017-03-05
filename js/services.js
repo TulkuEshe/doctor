@@ -63,5 +63,13 @@ window.onload = function(){
   $('.services__item').click(function() {
     $('.services__item').removeClass('services__item--active');
     $(this).addClass('services__item--active')
+  });
+  $('.appointment, .nav__request').click(function() {
+    $('.pop-up').addClass('pop-up--active');
+    $('.pop-up__item--request').addClass('pop-up__item--active');
+  });
+  $('.pop-up__close').click(function() {
+    $('.pop-up').removeClass('pop-up--active');
+    $('.pop-up__item').removeClass('pop-up__item--active');
   })
 }

@@ -1,0 +1,21 @@
+.fieldset {
+  display: flex;
+  width: 100%;
+  font-family: Calibri, Arial, sans-serif;
+  margin-bottom: 15px;
+  align-items: center;
+  .fieldset__input {
+    width: auto;
+    flex-grow: 1;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 18px;
+    &:focus {
+      outline: none;
+    }
+
+  }
+  &__label {
+    border-bottom: 3px solid transparent;
+    padding-right: 10px;
+  }
+}

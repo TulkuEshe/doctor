@@ -120,7 +120,7 @@
   }
   .footer__hidden {
     font-size: 22px;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
   .copyright {
     width: 100%;
@@ -130,6 +130,7 @@
   }
   .footer__hidden p {
     font-weight: 500;
+    padding-left: 10px;
   }
   .development {
     font-size: 14px;

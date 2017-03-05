@@ -230,7 +230,47 @@
 
   </div>
 
+  <section class="pop-up">
+    <article class="pop-up__item  pop-up__item--request">
+      <div class="pop-up__close"></div>
+      <div class="pop-up__content-review">
+        <h1 class="pop-up__paragraph  pop-up__paragraph--request">Request</br> an appointment</h1>
+        <p class="pop-up__text-contact">Please fill in this simple form and we will contact you
+as soon as possible.</p>
+        <div class="pop-up__block  pop-up__block--review">
+          <div class="fieldset">
+            <label class="fieldset__label">Name</label>
+            <input class="fieldset__input" type="text" name="name" placeholder="Please fill in the required field">
+          </div>
+          <div class="fieldset">
+            <label class="fieldset__label">Phone number</label>
+            <input class="fieldset__input" type="text" name="phone-number" placeholder="Please fill in the required field">
+          </div>
+          <div class="fieldset">
+            <label class="fieldset__label">E-mail</label>
+            <input class="fieldset__input" type="text" name="email" placeholder="Please fill in the required field">
+          </div>
 
+          <div class="fieldset">
+            <label class="fieldset__label">Reason for visit</label>
+            <select class="fieldset__input   select">
+              <option class="select__option" value="Consultation">Consultation</option>
+              <option class="select__option" value="Cleaning">Cleaning</option>
+              <option class="select__option" value="Orthodontic">Orthodontic</option>
+              <option class="select__option" value="Some-text">Some text</option>
+            </select>
+          </div>
+          <textarea class="textarea  textarea--request">Preferred day and time
+         </textarea>
+        </div>
+        <div class="pop-up__hours">Business Hours: Mon 11am to 5pm Tue-Thu 7:30am-5pm <br> Fri 8am to 12pm</div>
+        <div>
+         <button class="button  button__submit" value="submit">Submit</button>
+      </div>
+      </div>
+    </div>
+    </article>
+  </section>
   <script src="js/services.js" type="text/javascript"></script>
 </body>
 </html>

@@ -58,6 +58,11 @@
   padding-left: 20px;
   padding-bottom: 6px;
 }
+@media (max-width: $medium) {
+  .nav--top {
+    padding-left: 0;
+  }
+}
 @media (max-width: 959px) {
   .nav--top {
     padding: 0;
