@@ -1,42 +1,67 @@
 window.onload = function(){
- $('body').removeClass('preload1');
+  var step = 150;
+  $('body').removeClass('preload1');
 
- setTimeout(function() {
+  setTimeout(function() {
    $('body').removeClass('preload2');
- }, 1000);
+  }, 1000);
 
- setTimeout(function() {
+  setTimeout(function() {
    $('body').removeClass('preload3');
- }, 3000);
+  }, 3000);
 
- Draggable.create(".services__list", {
+
+  Draggable.create(".services__list", {
    type:"x",
    edgeResistance:0.9,
    bounds:".services__main",
    throwProps:true,
    onDragEnd: function(e) {
      $('.services__controls').addClass('services__controls--hidden');
-     $('.services__list').addClass('services__list--nohover');
+     $('.services__line').addClass('nohover');
     }
- });
+  });
 
- function moveServices(offset) {
+  function moveServices(offset) {
    TweenMax.to($('.services__list'), 0.5, {
      x: offset + 'px',
      ease: Power0.easeNone
    });
- }
- var step = 150;
+ };
 
- $('.services__list .services__line').not('.services__list--nohover .services__line').hover(function() {
-   moveServices('-=' + step);
- });
+  $('.services__line').hover(function() {
+    if (!$(this).hasClass('nohover')) {
+      moveServices('-=' + step);
+    }
+  });
 
- $('.services__control--left').click(function() {
+  $('.services__control--left').click(function() {
    moveServices('+=' + step);
- });
- $('.services__control--right').click(function() {
+  });
+  $('.services__control--right').click(function() {
    moveServices('-=' + step);
- });
+  });
+  var flipTimeout = true;
+  function setFlipTimeout() {
+    flipTimeout = false;
+    setTimeout(function() {
+      flipTimeout = true;
+    }, 2000);
+  }
 
+  $('.services__title').hover(function() {
+    var card = $(this).next().find('.card');
+    if (!card.hasClass('card--flipped') && flipTimeout) {
+      card.addClass('card--flipped');
+      setFlipTimeout();
+    } else if (flipTimeout) {
+      card.removeClass('card--flipped');
+      setFlipTimeout();
+    }
+  });
+
+  $('.services__item').click(function() {
+    $('.services__item').removeClass('services__item--active');
+    $(this).addClass('services__item--active')
+  })
 }

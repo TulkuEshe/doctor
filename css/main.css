@@ -1820,18 +1820,51 @@ select > option {
     background-position: 50%;
     border-radius: 50%; }
 
-.preload1 .services__item::before, .preload1 .services__item::after {
-  width: 0; }
+.card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s; }
+  .card--flipped {
+    transform: rotateY(180deg); }
+  .card__face {
+    margin: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; }
+    .card__face--back {
+      transform: rotateY(180deg); }
+  .card__wrap {
+    position: relative;
+    perspective: 400px; }
 
-.preload2 .services__decoration {
-  opacity: 0; }
+@media (max-width: 767px) {
+  .card {
+    position: relative; }
+    .card--flipped {
+      transform: none; }
+    .card__face {
+      position: relative; }
+      .card__face--back {
+        transform: none; }
+    .card__wrap {
+      display: none; }
+  .services__item--active .card__wrap {
+    display: block; } }
 
-.preload2 .services__decoration::after {
-  height: 0; }
-
-.preload3 .services__description,
-.preload3 .services__image {
-  opacity: 0; }
+@media (min-width: 768px) {
+  .preload1 .services__item::before, .preload1 .services__item::after {
+    width: 0; }
+  .preload2 .services__decoration {
+    opacity: 0; }
+  .preload2 .services__decoration::after {
+    height: 0; }
+  .preload3 .services__description,
+  .preload3 .services__image {
+    opacity: 0; } }
 
 >>>>>>> feat: desktop with animation
 .services {
@@ -1889,7 +1922,8 @@ select > option {
     padding: 0;
     margin: 0;
     padding-top: 200px;
-    transition: 0.5s; }
+    transition: 0.5s;
+    padding-bottom: 150px; }
   .services__item {
     width: 330px;
     padding-top: 34px;
@@ -2015,11 +2049,13 @@ select > option {
     padding-left: 0; }
   .services__list {
     display: block;
-    padding: 20px 10px 0; }
+    padding: 20px 10px 0;
+    transform: none !important; }
   .services__item {
     width: 100%;
     padding-left: 120px;
-    padding-top: 0; }
+    padding-top: 0;
+    min-height: 100px; }
     .services__item--active .services__image {
       background-color: #ffa44c; }
     .services__item::before {
@@ -2055,8 +2091,16 @@ select > option {
     left: 0;
     top: 0; }
   .services__title {
+    padding: 30px 0 20px;
     text-align: left; }
   .services__copy {
     text-align: left;
+<<<<<<< HEAD
     padding: 40px 0; } }
 >>>>>>> feat: desktop with animation
+=======
+    padding: 0 0 20px; }
+  .services__description,
+  .services__image {
+    transition: 0.3s; } }
+>>>>>>> feat: animation on desktop

@@ -1,0 +1,24 @@
+@media (min-width: 768px) {
+  .preload1 {
+    .services__item {
+      &::before,
+      &::after {
+        width: 0;
+      }
+    }
+  }
+  .preload2 {
+    .services__decoration {
+      opacity: 0;
+    }
+    .services__decoration::after {
+      height: 0;
+    }
+  }
+  .preload3 {
+    .services__description,
+    .services__image {
+      opacity: 0;
+    }
+  }
+}
