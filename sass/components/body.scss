@@ -8,6 +8,9 @@
     font-family: 'Calibri', sans-serif;
     box-sizing: border-box;
     background-attachment: fixed;
+    &--no-overflow {
+      overflow: hidden;
+    }
 }
 html {
     margin: 0;
@@ -50,14 +53,6 @@ img {
     box-sizing: border-box;
 }
 @media (max-width: $medium) {
-  .body {
-    // max-width: 800px;
-    // width: 100%;
-    // flex-wrap: wrap;
-    // margin: 0 auto;
-    // box-sizing: border-box;
-  }
-
   .main {
     width: 100%;
   }
@@ -68,14 +63,12 @@ img {
     box-sizing: border-box;
   }
 }
-
 @media (max-width: $mobile) {
    .body {
     display: flex;
     background-image: none;
     flex-wrap: wrap;
     margin: 0 auto;
-
    }
     .header {
       background-color: #e7e7d5;
@@ -88,6 +81,9 @@ img {
       position: fixed;
       z-index: 10;
       display: none;
+      &--active {
+       display: block;
+      }
     }
     .main   {
       background-color: #f2efe1;
@@ -101,7 +97,6 @@ img {
     display: none;
     }
 }
-
 @media (max-width: $small) {
   .main {
     padding: 0;

@@ -25,7 +25,7 @@
   border-radius: 50%;
   max-width: 800px;
   width: 100%;
-  max-height: 800px;
+  min-height: 800px;
   height: 100%;
   background-color: #ffffff;
   display: none;
@@ -313,36 +313,34 @@
     width: 100%;
   }
   .pop-up__close {
-    top: 29px;
-    right: 96px;
+    top: 10px;
+    right: 10px;
     background-image: url(../img/close-mobile.png);
   }
   .pop-up__leaf {
     display: none;
   }
   .pop-up .info__menu {
-    position: relative;
-    display: flex;
-    padding-left: 0;
-    justify-content: center;
+
     left: auto;
     bottom: auto;
     top: auto;
     padding-bottom: 36px;
     margin: 0;
-    padding-top: 0;
-    order: -1;
-    padding-right: 0;
+    padding-top: 20px;
+
+    padding-right: 20px;
   }
   .pop-up__item {
     max-width: 100%;
-    max-height: 100%;
+    min-height: 100%;
     border-radius: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    height: auto;
+    margin: 70px 0 40px;
+    width: calc(100% - 20px);
+    &--active {
+      display: block;
+    }
   }
-
   .pop-up__hidden-text {
     display: none;
   }
@@ -372,22 +370,15 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  // .pop-up__img {
-  //   display: flex;
-  //   justify-content: center;
-  //   align-content: center;
-  //   width: 356px;
-  //   height: 356px;
-  // }
+  .pop-up--active {
+    display: flex;
+    overflow: scroll;
+  }
 }
 @media (max-width: $small) {
   .pop-up--active {
     display: flex;
     flex-direction: column;
-  }
-  .pop-up__item {
-    padding-top: 10px;
-    padding-bottom: 10px;
   }
   .pop-up__paragraph {
     padding-top: 0;

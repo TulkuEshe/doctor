@@ -182,7 +182,6 @@
   }
   a.bottom__hidden {
     display: flex;
-    display: flex;
     justify-content: center;
     align-items: flex-end;
     color: #7d7d7d;
@@ -248,17 +247,17 @@
     font-size: 30px;
   }
   .bottom__hidden {
-    width: 34px;
-    height: 34px;
+    width: 57px;
+    height: 57px;
   }
   .bottom__round {
-    width: 70px;
-    height: 70px;
+    width: 110px;
+    height: 110px;
   }
   .bottom__add {
     right: 0px;
-    top: 6px;
-    width: 80px;
+    top: 22px;
+    width: 110px;
   }
   .bottom__white {
     padding-top: 14px;
@@ -282,7 +281,7 @@
     padding-left: 8px;
   }
   .bottom__button {
-    font-size: 23px;
+    font-size: 36.32px;
     font-weight: 400;
   }
 }

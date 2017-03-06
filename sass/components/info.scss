@@ -289,15 +289,13 @@
   }
   .info__menu {
     padding-left: 0;
-    width: 100%;
-    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;;
     position: relative;
     padding: 0;
     padding-top: 34px;
     margin: 0 auto;
-    font-size: 40px;
+    font-size: 2.5em;
     order: 1;
     padding-left: 31px;
     padding-right: 31px;
@@ -393,8 +391,10 @@
    }
   }
   .info__round {
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
   }
 }
 
@@ -433,17 +433,11 @@
   }
   .info__menu {
     padding-top: 10px;
-    font-size: 21px;
-    font-weight: 500;
+    font-size: 1.59em;
   }
-
   .info__article {
     padding-top: 5px;
     line-height: 1.2em;
     font-size: 18px;
-  }
-  .info__round {
-    width: 8px;
-    height: 8px;
   }
 }
