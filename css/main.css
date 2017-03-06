@@ -6,17 +6,17 @@
   margin: 0;
   font-family: 'Calibri', sans-serif;
   box-sizing: border-box;
-  background-attachment: fixed; }
-<<<<<<< HEAD
+  background-attachment: fixed;
+  background-image: url("../img/web_v2.jpg") no-repeat;}
+
   .body--no-overflow {
     overflow: hidden; }
-=======
   .body--home {
     background-image: url("../img/web_v2.jpg") no-repeat; }
   .body--services {
     background-color: #f8e9d1;
     background-image: url(../img/services/services-bg.jpg); }
->>>>>>> feat: desktop with animation
+
 
 html {
   margin: 0; }
