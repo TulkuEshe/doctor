@@ -1,4 +1,5 @@
 .body {
+  background-image: url("../img/web_v2.jpg");
   background-size: cover;
   display: flex;
   flex-wrap: wrap;
@@ -6,17 +7,12 @@
   margin: 0;
   font-family: 'Calibri', sans-serif;
   box-sizing: border-box;
-  background-attachment: fixed;
-  background-image: url("../img/web_v2.jpg") no-repeat;}
-
+  background-attachment: fixed; }
   .body--no-overflow {
     overflow: hidden; }
-  .body--home {
-    background-image: url("../img/web_v2.jpg") no-repeat; }
   .body--services {
     background-color: #f8e9d1;
     background-image: url(../img/services/services-bg.jpg); }
-
 
 html {
   margin: 0; }
@@ -76,7 +72,7 @@ img {
     padding: 0;
     left: 0;
     top: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(69, 67, 68, 0.9);
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -245,9 +241,7 @@ img {
       padding-right: 0; }
   .menu__link a {
     color: #ffffff;
-    display: flex;
-    width: 100%;
-    line-height: 0.7em; }
+    line-height: 0.9em; }
   .menu--top {
     flex-wrap: nowrap;
     justify-content: center;
@@ -263,12 +257,13 @@ img {
     margin: 0;
     position: absolute;
     bottom: 0;
-    font-size: 28.13px;
-    padding-right: 106px; }
+    font-size: 24.13px;
+    padding-right: 20px;
+    min-width: 230px; }
   .menu__hidden {
     display: flex;
     flex-direction: column;
-    width: 54%;
+    max-width: 200px;
     padding-top: 80px;
     font-style: italic;
     max-width: 275px;
@@ -837,7 +832,9 @@ img {
 
 @media (max-width: 639px) {
   .call {
-    padding-top: 10px; }
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px; }
   .call__now {
     font-size: 24px; }
   .call__text {
@@ -971,6 +968,8 @@ img {
   .bottom {
     width: 100%;
     padding-top: 60px; }
+    .bottom .container {
+      max-width: 100%; }
   .bottom__opinion {
     padding-right: 146px;
     width: 56%;
@@ -1416,31 +1415,47 @@ img {
   padding-bottom: 20px; }
 
 .pop-up__rating {
-  margin: 0 auto;
-  padding-bottom: 16px; }
-
-.pop-up__phone {
-  padding: 9px 9px;
-  background-color: #ffe59f;
-  margin-left: 4px;
-  border-radius: 6px; }
-  .pop-up__phone--noselected {
-    background-color: #e0e8e6; }
+  justify-content: space-around;
+  width: 100%;
+  flex-direction: row;
+  padding-bottom: 16px;
+  align-items: center; }
 
 .pop-up__your {
-  padding-right: 26px; }
-
-.pop-up__stars {
-  padding-right: 20px; }
+  display: flex;
+  justify-content: flex-start;
+  width: 46%; }
 
 .pop-up__good {
   display: flex;
-  align-items: center; }
+  justify-content: flex-end; }
 
-.pop-up__stars,
-.pop-up__your {
+.pop-up__phone {
+  width: 46px;
+  height: 46px;
+  margin-left: 4px;
+  border-radius: 6px;
+  background-image: url(../img/white-star.png);
+  background-repeat: no-repeat;
+  background-size: 25px 24px;
+  background-position: 50%; }
+
+.pop-up__stars label {
+  background-color: #e0e8e6; }
+
+.pop-up__stars input {
+  display: none; }
+
+.pop-up__stars input:checked ~ label,
+.pop-up__stars label:hover,
+.pop-up__stars label:hover ~ label {
+  background-color: #ffe59f; }
+
+.pop-up__stars {
   display: flex;
-  justify-content: center;
+  width: 100%;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
   align-items: center; }
 
 .pop-up input {
@@ -1490,9 +1505,11 @@ img {
 @media (max-width: 819px) {
   .pop-up {
     width: 100%; }
+    .pop-up .info__menu {
+      order: 0; }
   .pop-up__close {
     top: 10px;
-    right: 10px;
+    right: 30px;
     background-image: url(../img/close-mobile.png); }
   .pop-up__leaf {
     display: none; }
@@ -1508,26 +1525,13 @@ img {
     max-width: 100%;
     min-height: 100%;
     border-radius: 0;
-<<<<<<< HEAD
-    margin: 70px 0 40px;
-    width: calc(100% - 20px); }
+    width: calc(100% - 30px);
+    height: auto;
+    padding-top: 30px;
+    margin: 70px auto 40px;
+    overflow: visible; }
     .pop-up__item--active {
       display: block; }
-=======
-    height: auto; }
-  .pop-up__after-menu {
-    display: block;
-    font-size: 30px;
-    font-weight: 400;
-    padding-bottom: 50px;
-    padding-top: 40px;
-    margin: 0;
-    width: 100%;
-    padding-left: 40px;
-    padding-right: 40px;
-    box-sizing: border-box;
-    font-family: 'NotoSans', sans-serif; }
->>>>>>> popup to request appointment
   .pop-up__hidden-text {
     display: none; }
   .pop-up__block--team {
@@ -1550,17 +1554,14 @@ img {
     padding-bottom: 60px; }
   .pop-up--active {
     display: flex;
-    overflow: scroll; } }
+    overflow-y: scroll; } }
 
 @media (max-width: 639px) {
   .pop-up--active {
     display: flex;
     flex-direction: column; }
-<<<<<<< HEAD
-=======
   .pop-up__item {
     padding: 20px 10px; }
->>>>>>> popup to request appointment
   .pop-up__paragraph {
     padding-top: 0;
     font-size: 25px;
@@ -1587,15 +1588,11 @@ img {
     height: 30px;
     font-size: 15px;
     font-weight: 500; }
-  .pop-up__your {
-    padding-right: 10px; }
-  .pop-up__stars {
-    padding-right: 10px; }
   .pop-up__phone {
-    padding: 4px 4px;
     background-color: #ffe59f;
     margin-left: 3px;
     width: 25px;
+    height: 25px;
     border-radius: 6px; }
   .pop-up__rating {
     padding-bottom: 10px; }
@@ -1653,7 +1650,7 @@ select > option {
 
 @media (max-width: 767px) {
   .container {
-    max-width: 640px; }
+    max-width: 100%; }
   .container > .call {
     position: relative;
     justify-content: space-between;
@@ -1705,35 +1702,6 @@ select > option {
   .star__wrapper {
     padding-bottom: 0; } }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-.hamburger {
-  width: 60px;
-  height: 60px;
-  background-color: #dadbc2;
-  border-radius: 50%;
-  position: absolute;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .hamburger::before, .hamburger::after {
-    content: "";
-    display: block;
-    width: 60%; }
-  .hamburger::after {
-    height: 19px;
-    border-top: 2px solid #454344;
-    border-bottom: 2px solid #454344; }
-  .hamburger::before {
-    height: 2px;
-    background: #454344;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%); }
-=======
-=======
 .headline {
   font-size: 60px;
   line-height: 1.2em;
@@ -1812,9 +1780,6 @@ select > option {
   .nav--top {
     padding: 0; } }
 
-<<<<<<< HEAD
->>>>>>> feat: services html and css for desktop and tablet
-=======
 .appointment {
   padding: 20px;
   background-color: #ffffff;
@@ -1893,9 +1858,6 @@ select > option {
   .preload3 .services__image {
     opacity: 0; } }
 
-<<<<<<< HEAD
->>>>>>> feat: desktop with animation
-=======
 .fieldset {
   display: flex;
   width: 100%;
@@ -1914,9 +1876,9 @@ select > option {
     padding-right: 10px; }
 
 .textarea {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
-  font-family: 'Noto Sans', 'Arial', sans-serif;
+  font-family: 'Calibri', 'Arial', sans-serif;
   max-width: 481px;
   width: 100%;
   border: none;
@@ -1931,7 +1893,35 @@ select > option {
 .textarea--request {
   max-height: 100px; }
 
->>>>>>> popup to request appointment
+.hamburger {
+  width: 60px;
+  height: 60px;
+  background-color: #dadbc2;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .hamburger::before, .hamburger::after {
+    content: "";
+    display: block;
+    width: 60%; }
+  .hamburger::after {
+    height: 19px;
+    border-top: 2px solid #454344;
+    border-bottom: 2px solid #454344; }
+  .hamburger::before {
+    height: 2px;
+    background: #454344;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%); }
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none; } }
+
 .services {
   display: flex;
   flex-wrap: wrap;
@@ -1939,9 +1929,6 @@ select > option {
   min-height: 100vh; }
   .services .header {
     width: 360px; }
-<<<<<<< HEAD
->>>>>>> feat: Start services
-=======
   .services .call {
     width: calc(100% - 360px);
     padding-right: 20px;
@@ -2107,10 +2094,6 @@ select > option {
     right: auto;
     width: 100%; }
   .services__header {
-<<<<<<< HEAD
-    padding-left: 0; } }
->>>>>>> feat: services html and css for desktop and tablet
-=======
     padding-left: 0; }
   .services__list {
     display: block;
@@ -2163,17 +2146,9 @@ select > option {
     text-align: left; }
   .services__copy {
     text-align: left;
-<<<<<<< HEAD
-    padding: 40px 0; } }
->>>>>>> feat: desktop with animation
-=======
     padding: 0 0 20px; }
   .services__description,
   .services__image {
-<<<<<<< HEAD
-    transition: 0.3s; } }
->>>>>>> feat: animation on desktop
-=======
     transition: 0.3s; }
   .services__controls {
     opacity: 0; } }
@@ -2194,4 +2169,3 @@ select > option {
       max-height: 30px; }
   .services__title {
     padding-top: 8px; } }
->>>>>>> popup to request appointment

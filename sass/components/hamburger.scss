@@ -3,8 +3,7 @@
   height: 60px;
   background-color: #dadbc2;
   border-radius: 50%;
-  position: absolute;
-  position: absolute;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,5 +26,10 @@
     left: 50%;
     position: absolute;
     transform: translate(-50%);
+  }
+}
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
   }
 }
