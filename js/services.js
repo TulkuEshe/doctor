@@ -67,9 +67,11 @@ window.onload = function(){
   $('.appointment, .nav__request').click(function() {
     $('.pop-up').addClass('pop-up--active');
     $('.pop-up__item--request').addClass('pop-up__item--active');
+    $('.body').addClass('body--no-overflow');
   });
   $('.pop-up__close').click(function() {
     $('.pop-up').removeClass('pop-up--active');
     $('.pop-up__item').removeClass('pop-up__item--active');
+    $('.body').removeClass('body--no-overflow');
   })
 }

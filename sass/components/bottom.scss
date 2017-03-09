@@ -131,6 +131,9 @@
   .bottom {
     width: 100%;
     padding-top: 60px;
+    .container {
+      max-width: 100%;
+    }
   }
   .bottom__opinion {
     padding-right: 146px;

@@ -21,7 +21,6 @@
   background-size: 100%;
   position: fixed;
   cursor: pointer;
-
 }
 .pop-up__item {
   border-radius: 50%;
@@ -219,35 +218,50 @@
   padding-bottom: 20px;
 }
 .pop-up__rating {
-  margin: 0 auto;
+  justify-content: space-around;
+  width: 100%;
+  flex-direction: row;
   padding-bottom: 16px;
+  align-items: center;
 }
-.pop-up__phone {
-  padding: 9px 9px;
-  background-color: #ffe59f;
-  margin-left: 4px;
-  border-radius: 6px;
-  &--noselected {
-    background-color: #e0e8e6;
-  }
-}
-
 .pop-up__your {
-  padding-right: 26px;
-}
-.pop-up__stars {
-  padding-right: 20px;
+    display: flex;
+    justify-content: flex-start;
+    width: 46%;
 }
 .pop-up__good {
+    display: flex;
+    justify-content: flex-end;
+}
+.pop-up__phone {
+  width: 46px;
+  height: 46px;
+  margin-left: 4px;
+  border-radius: 6px;
+  background-image: url(../img/white-star.png);
+  background-repeat: no-repeat;
+  background-size: 25px 24px;
+  background-position: 50%
+}
+.pop-up__stars label {
+  background-color: #e0e8e6;
+}
+.pop-up__stars input {
+  display: none;
+}
+.pop-up__stars input:checked ~ label,
+.pop-up__stars label:hover,
+.pop-up__stars label:hover ~ label {
+  background-color: #ffe59f;
+}
+.pop-up__stars {
   display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
   align-items: center;
 }
-.pop-up__stars,
-.pop-up__your {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .pop-up input {
   border: none;
   border-bottom: 3px solid #a0bdb6;
@@ -301,10 +315,13 @@
 @media (max-width: $popup) {
   .pop-up {
     width: 100%;
+    .info__menu {
+      order: 0;
+    }
   }
   .pop-up__close {
     top: 10px;
-    right: 10px;
+    right: 30px;
     background-image: url(../img/close-mobile.png);
   }
   .pop-up__leaf {
@@ -326,12 +343,14 @@
     min-height: 100%;
     border-radius: 0;
 
-    margin: 70px 0 40px;
-    width: calc(100% - 20px);
+    width: calc(100% - 30px);
+    height: auto;
+    padding-top: 30px;
+    margin: 70px auto 40px;
+    overflow: visible;
     &--active {
       display: block;
     }
-    height: auto;
   }
 
   .pop-up__hidden-text {
@@ -365,7 +384,7 @@
   }
   .pop-up--active {
     display: flex;
-    overflow: scroll;
+    overflow-y: scroll;
   }
 }
 @media (max-width: $small) {
@@ -411,17 +430,11 @@
     font-size: 15px;
     font-weight: 500;
   }
-  .pop-up__your {
-    padding-right: 10px;
-  }
-  .pop-up__stars {
-    padding-right: 10px;
-  }
   .pop-up__phone {
-    padding: 4px 4px;
     background-color: #ffe59f;
     margin-left: 3px;
     width: 25px;
+    height: 25px;
     border-radius: 6px;
   }
   .pop-up__rating {

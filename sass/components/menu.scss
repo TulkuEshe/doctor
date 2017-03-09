@@ -168,9 +168,7 @@
   }
   .menu__link a {
     color: #ffffff;
-    display: flex;
-    width: 100%;
-    line-height: 0.7em;
+    line-height: 0.9em;
   }
   .menu--top {
     flex-wrap: nowrap;
@@ -188,13 +186,14 @@
     margin: 0;
     position: absolute;
     bottom: 0;
-    font-size: 28.13px;
-    padding-right: 106px;
+    font-size: 24.13px;
+    padding-right: 20px;
+    min-width: 230px;
   }
   .menu__hidden {
     display: flex;
     flex-direction: column;
-    width: 54%;
+    max-width: 200px;
     padding-top: 80px;
     font-style: italic;
     max-width: 275px;
