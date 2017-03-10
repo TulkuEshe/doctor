@@ -11,3 +11,4 @@ node_modules/
 Thumbs.db
 .idea
 .DS_Store
+archive/
