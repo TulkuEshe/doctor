@@ -1,8 +1,9 @@
 .call {
- width: 95%;
- display: flex;
- justify-content: flex-end;
- flex-direction: column;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 10px;
 }
 
 .call__now,
@@ -30,14 +31,15 @@
 }
 
 @media (max-width: $medium) {
-  .container > .call{
+  .call > .container  {
     position: relative;
   }
   .call {
     width: 100%;
     position: absolute;
-    top: -205px;
-    right: 0px;
+    top: 0;
+    right: 0;
+
    }
   .call__now {
     padding-bottom: 17px;
@@ -54,6 +56,9 @@
 }
 
 @media (max-width: $mobile) {
+  .call__wrap--active {
+    z-index: 23;
+  }
   .call {
     right: 0;
     padding-top: 20px;
@@ -62,6 +67,7 @@
     flex-wrap: wrap;
     top: auto;
     justify-content: space-between;
+    background: #f2efe1;
   }
   .call__now {
     font-size: 30px;

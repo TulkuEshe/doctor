@@ -7,11 +7,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   &::before,
   &::after {
     content: "";
     display: block;
     width: 60%;
+    transition: 0.3s;
   }
   &::after {
     height: 19px;
@@ -26,6 +28,28 @@
     left: 50%;
     position: absolute;
     transform: translate(-50%);
+  }
+}
+.call__wrap--active {
+  .hamburger {
+    background-color: rgba(0,0,0,0.6);
+    &::before,
+    &::after {
+      background: #dadbc2;
+      height: 2px;
+      width: 55%;
+    }
+    &::before {
+      transform: translate(-50%) rotate(45deg);
+
+    }
+    &::after {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%) rotate(-45deg);
+      border: none;
+      position: absolute;
+    }
   }
 }
 @media (min-width: 768px) {

@@ -330,7 +330,7 @@
   }
   .pop-up__close {
     top: 10px;
-    right: 30px;
+    right: 20px;
     background-image: url(../img/close-mobile.png);
   }
   .pop-up__leaf {
@@ -360,7 +360,7 @@
     align-items: flex-start;
     &::before {
       content: "";
-      width: calc(100% - 30px);
+      width: calc(100% - 15px);
       height: 55px;
       background: rgba(0, 0, 0, 0.5);
       position: fixed;
@@ -438,7 +438,7 @@
     width: 55%;
   }
   .pop-up .textarea {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     margin-bottom: 10px;
   }

@@ -66,11 +66,11 @@
   .menu--top {
     display: flex;
     flex-direction: column;
-    padding-top: 80px;
     padding-left: 0;
     margin: 0;
     flex-basis: auto;
-    margin-top: 52px;
+    padding-top: 80px;
+    padding-bottom: 50px;
 }
 
   .menu__list {
@@ -177,7 +177,7 @@
     align-items: flex-start;
     position: relative;
     margin: 0;
-    padding: 40px 0;
+    padding: 90px 0;
   }
   .menu__request {
     display: flex;

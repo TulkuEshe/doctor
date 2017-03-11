@@ -3,7 +3,7 @@
   function openPopup(section) {
     $('.pop-up').removeClass('pop-up--active');
     $(section).addClass('pop-up--active');
-    $('body').addClass('body--no-overflow');
+    $('.body').addClass('body--no-overflow');
   };
 
   $('.bottom__add').click(function (){
@@ -21,7 +21,7 @@
 
   $('.pop-up__close').click(function (){
     $('.pop-up').removeClass('pop-up--active');
-    $('body').removeClass('body--no-overflow');
+    $('.body').removeClass('body--no-overflow');
   });
   $('.info__close').click(function() {
     $(this).parent().addClass('hidden');

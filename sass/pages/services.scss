@@ -14,6 +14,7 @@
     justify-content: flex-start;
     position: relative;
     top: auto;
+    align-items: center;
   }
   .call__now {
     margin-bottom: 10px;
@@ -195,6 +196,7 @@
     .headline {
       margin: 20px 0;
     }
+
   }
   .services__header {
     padding-left: 30px;
@@ -209,7 +211,9 @@
       position: relative;
       top: auto;
       right: auto;
-      width: 100%;
+    }
+    .call__now {
+      margin-top: 10px;
     }
   }
   .services__header {
