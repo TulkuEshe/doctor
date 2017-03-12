@@ -1,5 +1,19 @@
+@import "vendors/normalize.scss";
+
 @import "utils/variables.scss";
+@import "utils/scaffolding.scss";
+
+
+
+@import "layout/container.scss";
+@import "layout/header.scss";
+@import "layout/footer.scss";
+
+
+
 @import "components/body.scss";
+@import "components/main.scss";
+
 @import "components/menu.scss";
 @import "components/info.scss";
 @import "components/button.scss";
@@ -18,4 +32,5 @@
 @import "components/fieldset.scss";
 @import "components/textarea.scss";
 @import "components/hamburger.scss";
+
 @import "pages/services.scss";

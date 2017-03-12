@@ -1,0 +1,28 @@
+.main {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+@media (max-width: $medium) {
+  .main {
+    width: 100%;
+  }
+}
+
+@media (max-width: $mobile) {
+
+  .main   {
+    background-color: #f2efe1;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+}
+@media (max-width: $small) {
+  .main {
+    padding: 0;
+  }
+}

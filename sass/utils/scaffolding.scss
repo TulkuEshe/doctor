@@ -1,0 +1,36 @@
+html {
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+p {
+    margin: 0;
+}
+.hidden {
+  display: none;
+}
+
+
+img {
+    width:100%;
+    display: block;
+    vertical-align: top;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+@media (max-width: $mobile) {
+
+  .hidden {
+    display: none;
+  }
+
+}
