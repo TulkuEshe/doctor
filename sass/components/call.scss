@@ -30,6 +30,14 @@
   display: none;
 }
 
+.body--services {
+  .call {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
 @media (max-width: $medium) {
   .call > .container  {
     position: relative;
@@ -42,7 +50,7 @@
 
    }
   .call__now {
-    padding-bottom: 17px;
+    padding-bottom: 10px;
     margin: 0;
   }
   .call__text {
@@ -137,6 +145,6 @@
     font-size: 24px;
   }
   .call__text {
-    font-size: 13.5px;
+    font-size: 12.5px;
   }
 }

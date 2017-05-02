@@ -404,6 +404,8 @@ img {
 
 .header {
   width: 20%; }
+  .header--services {
+    width: 300px; }
 
 @media (max-width: 1299px) {
   .header {
@@ -566,7 +568,9 @@ img {
     display: flex;
     background-image: none;
     flex-wrap: wrap;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+    .body--services {
+      background-color: #efedde; } }
 
 .main {
   width: 80%;
@@ -1283,6 +1287,11 @@ img {
 .call__menu {
   display: none; }
 
+.body--services .call {
+  position: absolute;
+  top: 0;
+  right: 0; }
+
 @media (max-width: 1299px) {
   .call > .container {
     position: relative; }
@@ -1292,7 +1301,7 @@ img {
     top: 0;
     right: 0; }
   .call__now {
-    padding-bottom: 17px;
+    padding-bottom: 10px;
     margin: 0; }
   .call__text {
     margin: 0;
@@ -1369,7 +1378,7 @@ img {
   .call__now {
     font-size: 24px; }
   .call__text {
-    font-size: 13.5px; } }
+    font-size: 12.5px; } }
 
 .bottom__white {
   background: #ffffff;
@@ -1661,7 +1670,7 @@ img {
 @media (max-width: 767px) {
   .footer {
     width: 100%;
-    background-color: #f9f4e9;
+    background-color: #fbf4ea;
     padding-left: 30px;
     padding-right: 40px;
     box-sizing: border-box;
@@ -2172,7 +2181,7 @@ img {
   border: none;
   background: #e0e8e6;
   border-radius: 11px;
-  font-family: 'Times New Roman', serif;
+  font-family: 'Calibri', 'Times New Roman', serif;
   font-size: 20px;
   font-weight: 400; }
 
@@ -2257,7 +2266,7 @@ select > option {
   font-size: 60px;
   line-height: 1.2em;
   text-transform: uppercase;
-  margin-top: 60px;
+  margin-top: 120px;
   margin-bottom: 20px;
   font-weight: normal; }
 
@@ -2266,70 +2275,9 @@ select > option {
   line-height: 1.3em;
   max-width: 790px; }
 
-.nav--top {
-  padding-top: 40px;
-  flex-basis: 360px;
-  padding-left: 50px;
-  display: flex; }
-
-.nav__list {
-  padding-left: 18px;
-  margin-top: 0;
-  padding-top: 18px;
-  position: relative; }
-
-.nav__list::before {
-  position: absolute;
-  content: "";
-  display: block;
-  border-left: 3px solid #454443;
-  min-height: 204px;
-  z-index: 0;
-  top: 15px;
-  left: -3px; }
-
-.nav__link {
-  font-size: 20px;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding-bottom: 10px;
-  margin: 0; }
-  .nav__link--last {
-    padding-bottom: 24px; }
-  .nav__link--active {
-    position: relative;
-    z-index: 2; }
-  .nav__link--active::before {
-    content: "";
-    display: block;
-    width: 5px;
-    height: 5px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    border: 1px solid #000000;
-    z-index: 100;
-    position: absolute;
-    top: 8px;
-    left: -23px; }
-
-.nav__request {
-  font-size: 14px;
-  font-weight: 400;
-  background: url(../img/fon.png) no-repeat 100%;
-  background-size: 164px 40px;
-  background-position: 0 0;
-  padding-top: 4px;
-  padding-right: 32px;
-  padding-left: 20px;
-  padding-bottom: 6px; }
-
 @media (max-width: 1299px) {
-  .nav--top {
-    padding-left: 0; } }
-
-@media (max-width: 959px) {
-  .nav--top {
-    padding: 0; } }
+  .headline {
+    margin-top: 0; } }
 
 .appointment {
   padding: 20px;
@@ -2495,20 +2443,6 @@ select > option {
   flex-wrap: wrap;
   width: 100%;
   min-height: 100vh; }
-  .services .header {
-    width: 360px; }
-  .services .call {
-    width: calc(100% - 360px);
-    padding-right: 20px;
-    display: flex;
-    justify-content: flex-start;
-    position: relative;
-    top: auto;
-    align-items: center; }
-  .services .call__now {
-    margin-bottom: 10px;
-    padding: 0;
-    margin-top: 26px; }
   .services .footer {
     margin-top: auto; }
   .services__main {
@@ -2529,7 +2463,7 @@ select > option {
     padding-top: 10px;
     padding-bottom: 10px; }
   .services__header {
-    padding-left: 1vw; }
+    padding-left: 10px; }
   .services__line {
     width: 100%;
     height: 2px;
@@ -2641,30 +2575,15 @@ select > option {
   left: 50%;
   transform: translateX(-50%); }
 
-@media (max-width: 959px) {
-  .services .call {
-    width: 100%;
-    position: static; }
-  .services .call__block {
-    position: absolute;
-    top: 10px;
-    right: 10px; }
-  .services .headline {
-    margin: 20px 0; }
+@media (max-width: 1299px) {
   .services__header {
     padding-left: 30px; } }
 
 @media (max-width: 767px) {
-  .services .call {
-    padding: 0 10px; }
-  .services .call__block {
-    position: relative;
-    top: auto;
-    right: auto; }
-  .services .call__now {
-    margin-top: 10px; }
   .services__header {
-    padding-left: 0; }
+    padding-left: 0;
+    margin-top: 100px;
+    padding: 10px; }
   .services__list {
     display: block;
     padding: 20px 10px 0;

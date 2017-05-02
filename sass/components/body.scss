@@ -26,5 +26,8 @@
     background-image: none;
     flex-wrap: wrap;
     margin: 0 auto;
+    &--services {
+      background-color: #efedde;
+    }
   }
 }
